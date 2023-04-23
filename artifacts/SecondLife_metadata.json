@@ -1,0 +1,366 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "hospitalsaddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "HospitalReg",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "_blooddonated",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "bloodtype",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "tohospital",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "frompatient",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "_bloodsupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodtype",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "topatient",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "fromhospital",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "_organdonated",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "organname",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "frompatient",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tohospital",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "_organsupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "organname",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "topatient",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "fromhospital",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "hospitalAddr",
+						"type": "address"
+					}
+				],
+				"name": "bookAppointment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "donars",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "patientid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hospitalid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "blood",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "organ",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bloodamt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodtype",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "organname",
+						"type": "string"
+					}
+				],
+				"name": "donate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hospitalid",
+						"type": "uint256"
+					}
+				],
+				"name": "getHospitalDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "patientReg",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patients",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SecondLife.sol": "SecondLife"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SecondLife.sol": {
+			"keccak256": "0xe4a7a14ca63ed97e5480c95bdb5fe9e8e9523664a115dd1b407570b24f4815d7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83a8543b33789b4c5606eab69b4a92932397e5f024a9997161df3c35c6eb27b6",
+				"dweb:/ipfs/QmSt9Qm4KSzqLcCpRFNopn4k9ZRo6bRSHmN3HdErhiFqUH"
+			]
+		}
+	},
+	"version": 1
+}
